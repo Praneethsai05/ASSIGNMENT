@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Collection Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#collection">My Collection</a></li>
+                <li><a href="#new-releases">New Releases</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Anime Collection Manager</h1>
+            <p>Manage and explore your anime series and movies like never before!</p>
+            <a href="#" class="btn" id="createAccountBtn">Create Account</a>
+            <span class="signInText">Already have an account <a href="#" id="signInBtn">Sign In</a></span>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Anime Collection Manager</p>
+    </footer>
+
+    <!-- Sign-up Pop-up -->
+    <div class="modal" id="signUpModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign-in Pop-up -->
+    <div class="modal" id="signInModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
